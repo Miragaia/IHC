@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>E-Commerce Website</title>
-    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="../css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
@@ -11,16 +11,18 @@
     <!-- Navbar -->
     <section id="navbarheader">
       <div class="logo">
-        <img src="images/logo2.png" class= "logo" alt="logo">
+        <a href="../index.html">
+            <img src="../images/logo2.png" class= "logo" alt="logo">
+        </a>
       </div>
       <nav class="navbar">
         <div class="container container-nav wh-100">
           <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a class= "active"href="Loja.html">Loja</a></li>
-            <li><a href="#">Sobre nós</a></li>
-            <li><a href="#">Contactos</a></li>
-            <li><a href="#">Novidades</a></li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a class= "active"href="../Loja.html">Loja</a></li>
+            <li><a href="../aboutUs.html">Sobre nós</a></li>
+            <li><a href="../contactos.html">Contactos</a></li>
+            <li><a href="../Novidades.html">Novidades</a></li>
           </ul>
           <div class="icons" style="justify-content: flex-end">
             <a class= "user" href="#"><i class="fas fa-user"></i></a>
@@ -33,20 +35,20 @@
 
     <section id="proDetails" class="section-p1">
         <div class="single-pro-image">
-            <img src="images/products/f1.jpg " style="margin-bottom: 10px;" width="100%" id="MainImg" alt="">
+            <img src="../images/products/f1.jpg " style="margin-bottom: 10px;" width="100%" id="MainImg" alt="">
 
             <div class="small-img-group">
                 <div class="small-img-col">
-                    <img src="images/products/f1.jpg " width="100%" class="small-img" alt="">
+                    <img src="../images/products/f1.jpg " width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="images/products/f1.jpg " width="100%" class="small-img" alt="">
+                    <img src="../images/products/f1.jpg " width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="images/products/f1.jpg " width="100%" class="small-img" alt="">
+                    <img src="../images/products/f1.jpg " width="100%" class="small-img" alt="">
                 </div>
                 <div class="small-img-col">
-                    <img src="images/products/f1.jpg  " width="100%" class="small-img" alt="">
+                    <img src="../images/products/f1.jpg  " width="100%" class="small-img" alt="">
                 </div>
             </div>
         </div>
@@ -70,8 +72,8 @@
     <section id="product1" class="section-p1">
         <h2>Outros Produtos</h2>
         <div class="pro-container">
-          <div class="pro">
-            <img src="images/products/f1.jpg" alt="">
+          <div class="pro" onclick="window.location.href='../products/sproduct.html'">
+            <img src="../images/products/f1.jpg" alt="">
             <div class="des">
               <span>Rexona</span>
               <h5>Papel Higienico</h5>
@@ -86,8 +88,8 @@
             </div>
             <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
           </div>
-          <div class="pro">
-            <img src="images/products/f1.jpg" alt="">
+          <div class="pro" onclick="window.location.href='../products/sproduct.html'">
+            <img src="../images/products/f1.jpg" alt="">
             <div class="des">
               <span>Rexona</span>
               <h5>Papel Higienico</h5>
@@ -102,8 +104,8 @@
             </div>
             <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
           </div>
-          <div class="pro">
-            <img src="images/products/f1.jpg" alt="">
+          <div class="pro" onclick="window.location.href='../products/sproduct.html'">
+            <img src="../images/products/f1.jpg" alt="">
             <div class="des">
               <span>Rexona</span>
               <h5>Papel Higienico</h5>
@@ -118,8 +120,8 @@
             </div>
             <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
           </div>
-          <div class="pro">
-            <img src="images/products/f1.jpg" alt="">
+          <div class="pro" onclick="window.location.href='../products/sproduct.html'">
+            <img src="../images/products/f1.jpg" alt="">
             <div class="des">
               <span>Rexona</span>
               <h5>Papel Higienico</h5>
@@ -184,6 +186,6 @@
         }
     </script>
 
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

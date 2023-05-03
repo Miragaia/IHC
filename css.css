@@ -34,16 +34,6 @@
     justify-content: center;
   }
 
-  /*nav ul {
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  
-  .nav-links li {
-    margin: 0 10px;
-    position: relative;
-  }*/
   .nav-links li {
     margin: 0 15px;
     font-size: 16px;
@@ -447,24 +437,14 @@
   #sm-banner .banner-box:hover{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
     transition: 0.2 ease ;
-    cursor: pointer;
   }
 
   #sm-banner .banner-box2:hover{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.1);
     transition: 0.2 ease ;
-    cursor: pointer;
   }
 
-
-  #sm-banner .banner-box:hover button {
-    background-color: white;
-    border: 1px solid #007bb6;
-    transition: 0.2s;
-    color: #007bb6;
-  }
-
-  #sm-banner .banner-box2:hover button {
+  #sm-banner button:hover {
     background-color: white;
     border: 1px solid #007bb6;
     transition: 0.2s;
@@ -483,8 +463,6 @@
     padding: 10px 0;
     color: white;
   }
-
-
   
   
   /* Promotions Styles */
@@ -638,6 +616,22 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+  }
+
+  #pagination .activePage{
+    background-color: #088178;
+    color: black;
+    border: 3px solid #000000;
+  }
+
+  #pagination .activePage:hover{
+    background-color: #fff;
+    color: black;
+    border: 2px solid #000000;
+    text-decoration: none;
+    padding: 15px 20px;
+    border-radius: 10px;
+    font-weight: 600;
   }
 
   #pagination {
