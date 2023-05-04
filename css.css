@@ -213,6 +213,7 @@
     padding: 0 30px;
     background-repeat: no-repeat;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   #sm-banner .banner-box2 {
@@ -231,6 +232,7 @@
     padding: 0 30px;
     background-repeat: no-repeat;
     border-radius: 10px;
+    margin-bottom: 10px;
   }
 
   #sm-banner h4{
@@ -874,6 +876,81 @@
   }
 
   #form-details button:hover{
+    background-color: white;
+    border: 1px solid #007bb6;
+    transition: 0.2s;
+    color: #007bb6;
+  }
+
+  #valuesText{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  #valuesText h2{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 26px;
+    line-height: 30px;
+    margin-top: 60px;
+    margin-bottom: 15px;  
+    color: #007bb6;
+  }
+
+  #valuesText span{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #1c9dcb;
+  }
+
+  #heroV{
+    background-image: url(images/values.png);
+    height: 35vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-position: top 0 right 0;
+    background-size: contain;
+    background-color: #e6e8f2;
+    padding: 0 80px;
+    background-repeat: no-repeat;
+  }
+
+  #heroV h4 {
+    color: rgb(30, 29, 29);
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  #heroV h1 {
+    color: rgb(59, 160, 194);
+  }
+
+  #heroV h2 {
+    font-size: 22px;
+  }
+
+  #heroV h2 strong {
+    font-size: 22px;
+    color: #007bb6;
+  }
+  
+
+  #heroV button{
+    background-color: rgb(59, 160, 194);
+    color: white;
+    border: 0;
+    padding: 10px 65px 10px 65px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  #heroV button:hover{
     background-color: white;
     border: 1px solid #007bb6;
     transition: 0.2s;
