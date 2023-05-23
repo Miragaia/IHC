@@ -19,15 +19,19 @@
         <div class="container container-nav wh-100">
           <ul class="nav-links">
             <li><a class= "active" href="index.html">Home</a></li>
-            <li><a href="Loja.html">Loja</a></li>
+            <li><a href="Loja.html">Produtos</a></li>
             <li><a href="aboutUs.html">Sobre nós</a></li>
             <li><a href="contactos.html">Contactos</a></li>
             <li><a href="Novidades.html">Novidades</a></li>
           </ul>
+          <form>
+            <i class="fas fa-search"></i>
+            <input id="IndexSearch-item" placeholder="Procure um produto" onclick="search()">
+          </form>
           <div class="icons" style="justify-content: flex-end">
-            <a class= "user" href="#"><i class="fas fa-user"></i></a>
-            <a class= "favs" href="#"><i class="fas fa-heart"></i></a>
-            <a class= "cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a class= "user" id="userLink" href="profile.html"><i class="fas fa-user"></i></a>
+            <a class= "favs" href="favoritos.html"><i class="fas fa-heart"></i></a>
+            <a class= "cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
           </div>
         </div>
       </nav>
@@ -38,7 +42,7 @@
       <h2>Com rigor e qualidade</h2>
       <h4>em todos os produtos</h4>
       <p>Conheça os nossos produtos</p>
-      <a href="Loja.html"><button>Comprar</button></a>
+      <a href="Loja.html"><button>Ver Produtos</button></a>
     </section>
 
     <section id="featured" class="section-p1">
@@ -72,62 +76,55 @@
     </section>
 
     <section id="product1" class="section-p1">
-      <h2>Promoções</h2>
-      <p>Produtos em Promoção</p>
-      <div class="pro-container">
-        <div class="pro">
-          <img src="images/products/f1.jpg" alt="">
+      <h2>Outros Produtos</h2>
+      <div class="pro-containerS">
+        <div class="pro" onclick="goToProduct(3)">
+          <img src="images/products/espuma.jpg" alt="">
           <div class="des">
-            <span>Rexona</span>
-            <h5>Papel Higienico</h5>
+            <span>DEB STOKO</span>
+            <h5>Espuma para mãos</h5>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
             </div>
-            <h4>10€</h4>
+            <h4>11,17€</h4>
           </div>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
         </div>
-        <div class="pro">
-          <img src="images/products/f1.jpg" alt="">
+        <div class="pro" onclick="goToProduct(17)">
+          <img src="images/products/page2_6.1.jpg" height="60%" alt="">
           <div class="des">
-            <span>Rexona</span>
+            <span>Goma-Camps</span>
             <h5>Papel Higienico</h5>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
             </div>
-            <h4>10€</h4>
+            <h4>8€</h4>
           </div>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
         </div>
-        <div class="pro">
-          <img src="images/products/f1.jpg" alt="">
+        <div class="pro" onclick="goToProduct(20)">
+          <img src="images/products/page2_9.1.png" height="60%" alt="">
           <div class="des">
-            <span>Rexona</span>
-            <h5>Papel Higienico</h5>
+            <span>Jofel</span>
+            <h5>Secador com Suporte Padrão</h5>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half"></i>
             </div>
             <h4>10€</h4>
           </div>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
         </div>
-        <div class="pro">
-          <img src="images/products/f1.jpg" alt="">
+        <div class="pro" onclick="goToProduct(11)">
+          <img src="images/products/tapeteAmb.jpg" alt="">
           <div class="des">
-            <span>Rexona</span>
-            <h5>Papel Higienico</h5>
+            <span>UriWave</span>
+            <h5>Tapete Rede Ambientador para Urinol</h5>
             <div class="star">
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
@@ -135,9 +132,8 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <h4>10€</h4>
+            <h4>3,90€</h4>
           </div>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
         </div>
       </div>
     </section>
@@ -180,7 +176,19 @@
       </div>
     </footer>
 
-    <script src="js/main.js"></script>
+    <script>
+      function goToProduct(id) {
+        window.location.href = 'products/sproduct.html?id=' + id;
+      }
+    </script>
+    <script>
+      function search() {
+        window.location.href = 'Loja.html';
+      }
+    </script>
+    <script src="javascript/products.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/Loja.js"></script>
   </body>
 </html>
 

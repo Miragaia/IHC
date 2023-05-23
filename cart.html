@@ -10,53 +10,67 @@
   <body>
     <!-- Navbar -->
     <section id="navbarheader">
-        <div class="logo">
-            <a href="index.html">
-                <img src="images/logo2.png" class= "logo" alt="logo">
-            </a>
-          </div>
+      <div class="logo">
+        <a href="index.html">
+            <img src="images/logo2.png" class= "logo" alt="logo">
+        </a>
+      </div>
       <nav class="navbar">
         <div class="container container-nav wh-100">
           <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
-            <li><a href="Loja.html">Produtos</a></li>
-            <li><a class= "active" href="aboutUs.html">Sobre nós</a></li>
+            <li><a href="Loja.html">Loja</a></li>
+            <li><a href="aboutUs.html">Sobre nós</a></li>
             <li><a href="contactos.html">Contactos</a></li>
             <li><a href="Novidades.html">Novidades</a></li>
           </ul>
           <div class="icons" style="justify-content: flex-end">
             <a class= "user" id="userLink" href="profile.html"><i class="fas fa-user"></i></a>
             <a class= "favs" href="favoritos.html"><i class="fas fa-heart"></i></a>
-            <a class= "cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+            <a class= "cart active" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
           </div>
         </div>
       </nav>
     </section>
 
-    <!-- About Us -->
-    <section id="about-header" class="section-p1">
+    <section id="cart" class="section-p1">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remover</td>
+                    <td>Imagem</td>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                    <td>Quantidade</td>
+                    <td>SubTotal</td>
+                </tr>
+            </thead>
+            <tbody id="cart-Items">
 
-      <img src="images/logoo.png" alt="">
-      <div>
-        <h2>Quem somos</h2>
-        <p>A Higilíquidos tem duas décadas de experiência na prestação de serviços, na representação de marcas e na distribuição de produtos de higiene.</p>
-        <p></p>
-        <p>É reconhecida tanto pela qualidade das marcas representadas como pelo conhecimento e competência profissional. Clientes, fornecedores e parceiros identificam a Higilíquidos com a sua experiência empresarial e também com a experiência dos seus recursos humanos.</p>
-        <p></p>
-        <p>Uma década antes da existência da empresa, já o sócio Luís Miragaia exercia funções neste âmbito profissional, colecionando experiência técnica nas áreas da manutenção informatizada do controlo dos produtos de limpeza e análise dos resultados e também na área da gestão empresarial, comercial e logística. Foi a sua experiência profissional que potenciou a existência da sociedade Higilíquidos em 2002, porque foi através da sua experiência que existiu o conhecimento do mercado, o acesso a canais de distribuição e representação e também a identificação dos clientes com a sua competência e a confiança nas suas propostas.</p>
-        <p></p>
-        <p>Ao longo dos anos as competências do sócio Luís Miragaia foram-se confundindo com a empresa e por isso, hoje, a Higilíquidos mais do que uma prestadora de serviços e distribuidora de produtos, é uma parceira de confia</p>
-        <br><br>
-
-        <marquee class="mq" loop="-1" scrollamount="5">Somos mais que uma empresa, descobre mais sobre o nosso compromisso em providenciar produtos e equipamentos de qualidade.</marquee>
-      </div>
+            </tbody>
+        </table>
+        <div style="margin-top: 20px;">
+          <button  class="normal" id="delCart" onclick="window.location.href='cart.html'">Esvaziar Carrinho</button>
+        </div>
+        
     </section>
 
-    <section id="about-video" class="section-p1">
-      <h1>Estamos aqui para ajudar</h1>
-      <div class="video">
-        <video autoplay muted loop src="images/video.mp4"></video>
-      </div>
+    <section id="cart-add" class="section-p1">
+        <div id="coupon">
+            <h3>Aplicar Vale de desconto</h3>
+            <div>
+                <input type="text" placeholder="Adicione o seu vale">
+                <button class="normal" id="aplicar">Aplicar</button>
+            </div>
+        </div>
+
+        <div id="subtotal">
+            <h3>Total do Carrinho</h3>
+            <table id="table">
+                
+            </table>
+            <button onclick="window.location.href = 'payment.html'" class="normal">Avançar para Pagamento</button>
+        </div>
     </section>
 
       <footer>
@@ -85,6 +99,7 @@
       </footer>
 
       <script src="javascript/products.js"></script>
+      <script src="javascript/car.js"></script>
       <script src="javascript/app.js"></script>
       <script src="javascript/Loja.js"></script>
   </body>

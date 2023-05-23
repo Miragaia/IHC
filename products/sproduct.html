@@ -19,112 +19,74 @@
         <div class="container container-nav wh-100">
           <ul class="nav-links">
             <li><a href="../index.html">Home</a></li>
-            <li><a class= "active"href="../Loja.html">Loja</a></li>
+            <li><a class= "active" href="../Loja.html">Produtos</a></li>
             <li><a href="../aboutUs.html">Sobre nós</a></li>
             <li><a href="../contactos.html">Contactos</a></li>
             <li><a href="../Novidades.html">Novidades</a></li>
           </ul>
           <div class="icons" style="justify-content: flex-end">
-            <a class= "user" href="#"><i class="fas fa-user"></i></a>
-            <a class= "favs" href="#"><i class="fas fa-heart"></i></a>
-            <a class= "cart" href="#"><i class="fas fa-shopping-cart"></i></a>
+            <a class= "user" id="userLink" href="../profile.html"><i class="fas fa-user"></i></a>
+            <a class= "favs" href="../favoritos.html"><i class="fas fa-heart"></i></a>
+            <a class= "cart" href="../cart.html"><i class="fas fa-shopping-cart"></i></a>
           </div>
         </div>
       </nav>
     </section>
 
-    <section id="proDetails" class="section-p1">
-        <div class="single-pro-image">
-            <img src="../images/products/f1.jpg " style="margin-bottom: 10px;" width="100%" id="MainImg" alt="">
-
-            <div class="small-img-group">
-                <div class="small-img-col">
-                    <img src="../images/products/f1.jpg " width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/products/f1.jpg " width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/products/f1.jpg " width="100%" class="small-img" alt="">
-                </div>
-                <div class="small-img-col">
-                    <img src="../images/products/f1.jpg  " width="100%" class="small-img" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="single-pro-details">
-            <h4>Papel Higienico</h4>
-            <h2>10€</h2>
-            <p></p>
-            <select>
-                <option>Selecione Quantidade</option>
-                <option>8 Unidades</option>
-                <option>10 Unidades</option>
-                <option>12 Unidades</option>
-            </select>
-            <input type="number" value="1">
-            <button class="normal">Adicione ao Carrinho</button>
-            <h4>Detalhe dos produtos</h4>
-            <span>Texto dos detalhes</span>
-        </div>
+    <section id="proDetails"  class="section-p1">
+        
     </section>
 
     <section id="product1" class="section-p1">
         <h2>Outros Produtos</h2>
-        <div class="pro-container">
-          <div class="pro" onclick="window.location.href='../products/sproduct.html'">
-            <img src="../images/products/f1.jpg" alt="">
+        <div class="pro-containerS">
+          <div class="pro" onclick="goToProduct(3)">
+            <img src="../images/products/espuma.jpg" alt="">
             <div class="des">
-              <span>Rexona</span>
-              <h5>Papel Higienico</h5>
+              <span>DEB STOKO</span>
+              <h5>Espuma para mãos</h5>
               <div class="star">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
               </div>
-              <h4>10€</h4>
+              <h4>11,17€</h4>
             </div>
-            <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
           </div>
-          <div class="pro" onclick="window.location.href='../products/sproduct.html'">
-            <img src="../images/products/f1.jpg" alt="">
+          <div class="pro" onclick="goToProduct(17)">
+            <img src="../images/products/page2_6.1.jpg" height="60%" alt="">
             <div class="des">
-              <span>Rexona</span>
+              <span>Goma-Camps</span>
               <h5>Papel Higienico</h5>
               <div class="star">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
               </div>
-              <h4>10€</h4>
+              <h4>8€</h4>
             </div>
-            <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
           </div>
-          <div class="pro" onclick="window.location.href='../products/sproduct.html'">
-            <img src="../images/products/f1.jpg" alt="">
+          <div class="pro" onclick="goToProduct(20)">
+            <img src="../images/products/page2_9.1.png" height="60%" alt="">
             <div class="des">
-              <span>Rexona</span>
-              <h5>Papel Higienico</h5>
+              <span>Jofel</span>
+              <h5>Secador com Suporte Padrão</h5>
               <div class="star">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half"></i>
               </div>
               <h4>10€</h4>
             </div>
-            <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
           </div>
-          <div class="pro" onclick="window.location.href='../products/sproduct.html'">
-            <img src="../images/products/f1.jpg" alt="">
+          <div class="pro" onclick="goToProduct(11)">
+            <img src="../images/products/tapeteAmb.jpg" alt="">
             <div class="des">
-              <span>Rexona</span>
-              <h5>Papel Higienico</h5>
+              <span>UriWave</span>
+              <h5>Tapete Rede Ambientador para Urinol</h5>
               <div class="star">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -132,60 +94,44 @@
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
               </div>
-              <h4>10€</h4>
+              <h4>3,90€</h4>
             </div>
-            <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
           </div>
         </div>
       </section>
 
-    <footer>
-      <div class="footer-columns">
-        <div class="about-us">
-          <h3>Sobre nós</h3>
-            <a href="">Higiliquidos</a>
-            <a href="">Contacte-nos</a>
-            <a href="">Visão e Valores</a>
-        </div>
-        <div class="contacts">
-          <h3>Contactos</h3>
-          <p><strong>Localização:</strong> Arrifana,Guarda</p>
-          <p><strong>Contacto:</strong> 271 963 349</p>
-        </div>
-          <div class="social">
-            <ul class="social-icons">
-              <li><a class="facebook" href="#"><i class="fa-brands fa-facebook"></i></a></li>
-              <li><a class="instagram" href="#"><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a class="linkedin" href="#"><i class="fa-solid fa-envelope"></i></a></li>   
-            </ul>
+      <footer>
+        <div class="footer-columns">
+          <div class="about-us">
+            <h3>Sobre nós</h3>
+              <a href="aboutUs.html">Higiliquidos</a>
+              <a href="contactos.html">Contacte-nos</a>
+              <a href="values.html">Visão e Valores</a>
           </div>
-      </div>
-      <div class="copyright">
-        <p>© 2021 Higiliquidos. Todos os direitos reservados.</p>
-      </div>
-    </footer>
+          <div class="contacts">
+            <h3>Contactos</h3>
+            <p><strong>Localização:</strong> Arrifana,Guarda</p>
+            <p><strong>Contacto:</strong> 271 963 349</p>
+          </div>
+            <div class="social">
+              <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/people/Higiliquidos-Produtos-e-equipamentos-de-limpeza-Lda/100070644618866/?locale=pt_PT"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/higiliquidos_pt/"><i class="fa-brands fa-instagram"></i></a></li>  
+              </ul>
+            </div>
+        </div>
+        <div class="copyright">
+          <p>© 2021 Higiliquidos. Todos os direitos reservados.</p>
+        </div>
+      </footer>
 
-    <script>
-        var MainImg = document.getElementById('MainImg');
-        var smallImg = document.getElementsByClassName('small-img');
-        
-        smallImg[0].onclick = function(){
-            MainImg.src = smallImg[0].src;
+      <script>
+        function goToProduct(id) {
+          window.location.href = 'sproduct.html?id=' + id;
         }
-
-        smallImg[1].onclick = function(){
-            MainImg.src = smallImg[1].src;
-        }
-
-        smallImg[2].onclick = function(){
-            MainImg.src = smallImg[2].src;
-        }
-
-        smallImg[3].onclick = function(){
-            MainImg.src = smallImg[3].src;
-        }
-    </script>
-
-    <script src="../script.js"></script>
+      </script>
+    <script src="../javascript/products.js"></script>
+    <script src="../javascript/app.js"></script>
+    <script src="../javascript/Loja.js"></script>
   </body>
 </html>
