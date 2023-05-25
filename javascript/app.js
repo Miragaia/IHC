@@ -28,6 +28,9 @@ function renderProductDetails() {
         
         <input type="number" id="num" value="1"> 
         <button id="addCart">Adicione ao Carrinho</button>
+        <button onclick="handleButtonClick()" style="background: none; border: none;">
+          <i class="fa-solid fa-heart fa-beat fa-xl" style="color: #cd1d1d;"></i>
+        </button>
         <h4>Detalhe dos produtos</h4>
         <span>${product.description}</span>
       </div>
@@ -67,8 +70,10 @@ renderProductDetails();
 //cart array
 
 
-
-
+//favourite alert
+function handleButtonClick() {
+  alert("Adicionado com sucesso aos favoritos!");
+}
 
 
 
