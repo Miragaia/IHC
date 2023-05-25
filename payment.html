@@ -9,6 +9,35 @@
     <link rel= "stylesheet" href="payment.css">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
+  <style>
+    .cancel-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border: none;
+      background-color: red;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+    
+    .cancel-btn:hover {
+      background-color: darkred;
+    }
+
+    .button-row {
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    .btn {
+      flex-basis: 50%;
+      margin-left: 10px;
+    }
+    
+  </style>
   <body>
     <!-- Navbar -->
     <section id="navbarheader">
@@ -95,7 +124,10 @@
               <label>
                   <input type="checkbox" checked="checked" name="sameadr"> Endereço de entrega igual ao de pagamento
               </label>
-              <input type="submit" onclick="handleButton()" value="Finalizar compra" class="btn">
+              <div class="button-row">
+                <a href="cart.html" class="btn cancel-btn">Cancelar</a>
+                <input type="submit" onclick="handleButton()" value="Finalizar compra" class="btn">
+              </div>
             </form>
           </div>
         </div>
