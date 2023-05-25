@@ -26,7 +26,7 @@ function renderProductDetails() {
         <h2>${product.price}€</h2>
         <p id="opcoes"></p>
         
-        <input type="number" id="num" value="1"> 
+        <input type="number" id="num" value="1" min="1"> 
         <button id="addCart">Adicione ao Carrinho</button>
         <button onclick="handleButtonClick()" style="background: none; border: none;">
           <i class="fa-solid fa-heart fa-beat fa-xl" style="color: #cd1d1d;"></i>
