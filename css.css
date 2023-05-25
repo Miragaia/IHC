@@ -1737,6 +1737,13 @@ input[type="range"] {
   margin-top: -35px;
 }
 
+#logout {
+  background-color: #476A6F !important;
+  text-decoration:none !important; 
+  color: #fff !important; 
+  margin-left: 1350px;
+}
+
 
 
   @media(max-width:7){
