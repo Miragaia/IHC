@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>E-Commerce Website</title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel= "stylesheet" href="payment.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <section id="navbarheader">
+      <div class="logo">
+        <a href="index.html">
+            <img src="images/logo2.png" class= "logo" alt="logo">
+        </a>
+      </div>
+      <nav class="navbar">
+        <div class="container container-nav wh-100">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Loja.html">Produtos</a></li>
+            <li><a href="aboutUs.html">Sobre nós</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a class= "active" href="Novidades.html">Novidades</a></li>
+          </ul>
+          <div class="icons" style="justify-content: flex-end">
+            <a class= "user" id="userLink" href="profile.html"><i class="fas fa-user"></i></a>
+            <a class= "favs" href="favoritos.html"><i class="fas fa-heart"></i></a>
+            <a class= "cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- Payment -->
+    <section id="section_payment">
+    <div id="payment" class="row">
+        <div class="col-75">
+        <div class="container">
+            <form action="/index.html">
+    
+            <div class="row">
+                <div class="col-50">
+                <h3>Billing Address</h3>
+                <label for="fname"><i class="fa fa-user"></i> Nome Completo</label>
+                <input type="text" id="fname" name="firstname" placeholder="Miguel Veloz">
+                <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                <input type="text" id="email" name="email" placeholder="oveloz18@example.com">
+                <label for="adr"><i class="fa-solid fa-location-dot"></i> Morada</label>
+                <input type="text" id="adr" name="address" placeholder="Estrada do Cruzeiro, Lote 96">
+                <label for="city"><i class="fa fa-institution"></i> Cidade</label>
+                <input type="text" id="city" name="city" placeholder="Leiria">
+    
+                <div class="row">
+                    <div class="col-50">
+                    <label for="state"><i class="fa-solid fa-earth-europe"></i> País</label>
+                    <input type="text" id="state" name="state" placeholder="Portugal">
+                    </div>
+                    <div class="col-50">
+                    <label for="zip"><i class="fa-solid fa-location-dot"></i> Código Postal</label>
+                    <input type="text" id="zip" name="zip" placeholder="3421-420">
+                    </div>
+                </div>
+                </div>
+    
+                <div class="col-50">
+                <h3>Pagamento</h3>
+                <label for="fname">Cartões Aceites</label>
+                <div class="icon-container">
+                    <i class="fa-brands fa-cc-visa fa-xl" style="color:navy;"></i>
+                    <i class="fa-brands fa-cc-mastercard fa-xl" style="color:red;"></i>
+                </div>
+                <label for="cname"><i class="fa-solid fa-address-card"></i> Nome no Cartão</label>
+                <input type="text" id="cname" name="cardname" placeholder="Miguel Veloz">
+                <label for="ccnum"><i class="fa-solid fa-credit-card"></i> Número do Cartão</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111 2222 3333 4444">
+                <label for="expmonth"><i class="fa-solid fa-calendar"></i> Validade (Mês)</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="Setembro">
+    
+                <div class="row">
+                    <div class="col-50">
+                    <label for="expyear"><i class="fa-regular fa-calendar"></i> Validade (Ano)</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2001">
+                    </div>
+                    <div class="col-50">
+                    <label for="cvv"><i class="fa-regular fa-credit-card"></i> CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="420">
+                    </div>
+                </div>
+                </div>
+    
+            </div>
+            <label>
+                <input type="checkbox" checked="checked" name="sameadr"> Endereço de entrega igual ao de pagamento
+            </label>
+            <input type="submit" onclick="handleButton()" value="Finalizar compra" class="btn">
+            </form>
+        </div>
+        </div>
+    </section>
+
+
+    <!--Footer-->
+    <footer>
+        <div class="footer-columns">
+          <div class="about-us">
+            <h3>Sobre nós</h3>
+              <a href="aboutUs.html">Higiliquidos</a>
+              <a href="contactos.html">Contacte-nos</a>
+              <a href="values.html">Visão e Valores</a>
+          </div>
+          <div class="contacts">
+            <h3>Contactos</h3>
+            <p><strong>Localização:</strong> Arrifana,Guarda</p>
+            <p><strong>Contacto:</strong> 271 963 349</p>
+          </div>
+            <div class="social">
+              <ul class="social-icons">
+                <li><a class="facebook" href="https://www.facebook.com/people/Higiliquidos-Produtos-e-equipamentos-de-limpeza-Lda/100070644618866/?locale=pt_PT"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/higiliquidos_pt/"><i class="fa-brands fa-instagram"></i></a></li>  
+              </ul>
+            </div>
+        </div>
+        <div class="copyright">
+          <p>© 2021 Higiliquidos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+    <script>
+        function handleButton() {
+            alert("Compra realizda com sucesso!");
+        }
+    </script>
+    <script src="javascript/products.js"></script>
+    <script src="javascript/app.js"></script>
+    <script src="javascript/Loja.js"></script>
+    <script src="javascript/filters.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

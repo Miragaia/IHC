@@ -1,83 +1,90 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
-
-
-
-.card{
-	border: 0px;
-	max-width: 450px;
-	border-radius: 15px;
-	margin: 150px 0 150px;
-	padding: 35px;
-	padding-bottom: 20px!important;
-    background: linear-gradient(to right, rgba(235,224,232,1) 52%,rgba(254,191,1,1) 53%,rgba(254,191,1,1) 100%);
-}
-img#visa{
-	transform: translate(160px,-10px);
-}
-img#visa:hover{
-    cursor: pointer;
-}
-.text-warning{
-	font-size: 12px;
-	font-weight: 500;
-	color: #edb537!important;
-}
-#cno{
-	transform: translateY(-10px);
-}
-input{
-	border-bottom: 1.5px solid #E8E5D2!important;
-	font-weight: bold;
-	border-radius: 0;
-	border: 0;
-
-}
-.form-group input:focus{
-	border: 0;
-	outline: 0;
-}
-.col-sm-5{
-	padding-left: 90px;
-}
-.btn{
-	background: #F3A002!important;
-	border: none;
-	border-radius: 30px;
-}
-.btn:focus{
-    box-shadow: none;
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
 }
 
-.animate-charcter
-{
-   text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    /*#231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%*/
-    #102542 0%,
-    #1b3a4b 30%,
-    #335d6b 60%,
-    #4f7d8a 100%
-  );
-  background-size: auto auto;
-  background-clip: border-box;
-  background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
-  display: inline-block;
-      font-size: 26px;
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
 }
 
-@keyframes textclip {
-  to {
-    background-position: 200% center;
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+#payment .container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+#section_payment {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (and change the direction - make the "cart" column go on top) */
+@media (max-width: 800px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
   }
 }
