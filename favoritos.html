@@ -242,10 +242,24 @@
         <p>© 2021 Higiliquidos. Todos os direitos reservados.</p>
       </div>
     </footer>
-
+    <script>
+      function goToProduct(id) {
+        window.location.href = 'products/sproduct.html?id=' + id;
+      }
+    </script>
+    <script>
+      document.getElementById("search-item").focus();
+    </script>
+    <script>
+      function show(){
+        document.getElementById('sidebar').classList.toggle('active');
+        st.toggle('active');
+      }
+    </script>
     <script src="javascript/products.js"></script>
     <script src="javascript/app.js"></script>
     <script src="javascript/Loja.js"></script>
     <script src="javascript/filters.js"></script>
+
   </body>
 </html>

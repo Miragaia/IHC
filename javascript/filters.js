@@ -66,7 +66,7 @@ function fillSlider(from, to, sliderColor, rangeColor, controlSlider) {
 }
 
 function setToggleAccessible(currentTarget) {
-const toSlider = document.querySelector('#toSlider');
+const toSlider = document.querySelector('#toSlider2');
 if (Number(currentTarget.value) <= 0 ) {
   toSlider.style.zIndex = 2;
 } else {
@@ -74,10 +74,10 @@ if (Number(currentTarget.value) <= 0 ) {
 }
 }
 
-const fromSlider = document.querySelector('#fromSlider');
-const toSlider = document.querySelector('#toSlider');
-const fromInput = document.querySelector('#fromInput');
-const toInput = document.querySelector('#toInput');
+const fromSlider = document.querySelector('#fromSlider2');
+const toSlider = document.querySelector('#toSlider2');
+const fromInput = document.querySelector('#fromInput2');
+const toInput = document.querySelector('#toInput2');
 fillSlider(fromSlider, toSlider, '#C6C6C6', '#25daa5', toSlider);
 setToggleAccessible(toSlider);
 

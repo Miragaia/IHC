@@ -142,7 +142,7 @@ function opcoes(opcao){
 
 function filter(marcaAtr){
   
-  const storeitems = document.getElementById("pro-container");
+  const storeitems = document.getElementById("pro-container2");
   var FilterArray = [];
   var SearchArray = outraSearch();//está bem
   
@@ -154,7 +154,7 @@ function filter(marcaAtr){
      BrandArray = filterMarca(marcaAtr); //ids dos produtos com a marca selecionada
   }
   
-  if (SearchArray.length <=12){  // pesquisei
+  if (SearchArray.length <= 12){  // pesquisei
     
     for (let i = 0; i < SearchArray.length; i++){
       
@@ -208,10 +208,10 @@ function filter(marcaAtr){
 function outraSearch() {
   const searchbox = document.getElementById("search-item").value.toUpperCase();
   
-  const storeitems = document.getElementById("pro-container");
+  const storeitems = document.getElementById("pro-container2");
   const productNames = [];
 
-  for (let i = 0; i < 12; i++) {
+  for (let i = 12; i < 24; i++) {
     productNames.push(products[i].name);
   }
   console.log("productNames",productNames);
@@ -240,14 +240,14 @@ function outraSearch() {
 }
 
 function filterPrice() {
-  var fromI = document.getElementById("fromInput");
-  var toI = document.getElementById("toInput");
+  var fromI = document.getElementById("fromInput2");
+  var toI = document.getElementById("toInput2");
   var precoMin = fromI.value;
   var precoMax = toI.value;
-  const storeitems = document.getElementById("pro-container");
+  const storeitems = document.getElementById("pro-container2");
   const productPrices = [];
 
-  for (let i = 0; i < 12; i++) {
+  for (let i = 12; i < 24; i++) {
     productPrices.push(products[i].price);
   }
 
@@ -275,9 +275,9 @@ function filterPrice() {
 function filterMarca(marcaAtr) {
   var marcaI = document.getElementById(marcaAtr);
   var marca = marcaI.value;
-  const storeitems = document.getElementById("pro-container");
+  const storeitems = document.getElementById("pro-container2");
   const productBrands = [];
-  for (let i = 0; i < 12; i++) {
+  for (let i = 12; i < 24; i++) {
     productBrands.push(products[i].brand);
   }
   

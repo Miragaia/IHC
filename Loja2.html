@@ -24,8 +24,12 @@
             <li><a href="contactos.html">Contactos</a></li>
             <li><a href="Novidades.html">Novidades</a></li>
           </ul>
+          <form>
+            <i class="fas fa-search"></i>
+            <input id="search-item" placeholder="Procure um produto" onkeyup="filter()">
+          </form>
           <div class="icons" style="justify-content: flex-end">
-            <a class= "user" id="userLink" href="profile.html"><i class="fas fa-user"></i></a> 
+            <a class= "user" id="userLink" href="profile.html"><i class="fas fa-user"></i></a>
             <a class= "favs" href="favoritos.html"><i class="fas fa-heart"></i></a>
             <a class= "cart" href="cart.html"><i class="fas fa-shopping-cart"></i></a>
           </div>
@@ -33,48 +37,53 @@
       </nav>
     </section>
 
-    <section id="heroL">
+    <section id="heroL2">
+      <div id="sidebar2">
+        <div class="toggle-btn" onclick="show()">
+          <button id="FiltrosBtn2">Filtros</button>
+        </div>
+  
+        <ul class="filtragem">
+          <li>
+            <div class="range_container">
+              <h4 id="Preco2">Preço:</h4>
+              <div class="sliders_control">
+                  <input id="fromSlider2" onclick="filter()" type="range" value="3" min="0" max="299"/>
+                  <input id="toSlider2" onclick="filter()" type="range" value="290" min="0" max="300"/>
+              </div>
+              <div class="form_control">
+                <div class="form_control_container">
+                    <div class="form_control_container__time">Min</div>
+                    <input class="form_control_container__time__input" onclick="filter()" type="number" id="fromInput2" value="3" min="0" max="299"/>
+                </div>
+                <div class="form_control_container">
+                    <div class="form_control_container__time">Max</div>
+                    <input class="form_control_container__time__input" onclick="filter()" type="number" id="toInput2" value="290" min="0" max="300"/>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="scroll-container">
+            <h4 style="margin-top: 0px;">Marcas:</h4>
+            <div class="marcas">
+              <input type="radio" name="marca"  onclick="filter('Tork')" id="Tork" value="Tork">Tork</input>
+              <input type="radio" name="marca" onclick="filter('Vileda2')" id="Vileda2" value="Vileda">Vileda</input>
+              <input type="radio" name="marca" onclick="filter('Jofel')" id="Jofel" value="Jofel">Jofel</input>
+              <input type="radio" name="marca" onclick="filter('Goma-Camps')" id="Goma-Camps" value="Goma-Camps">Goma-Camps</input>
+              <input type="radio" name="marca" onclick="filter('Egiquímica2')" id="Egiquímica2" value="Egiquímica">Egiquímica</input>
+              <input type="radio" name="marca" onclick="filter('UriWave2')" id="UriWave2" value="UriWave">UriWave</input>
+            </div>
+          </li>
+        </ul>
+      </div>
       <h1>Bem vindos à nossa página de produtos!</h1>
       <h2>Aqui podes navegar e encontrar aquilo que mais necessitas</h2>
       <h4>Conhece também as nossas Novidades</h4>
       <button onclick="window.location.href='Novidades.html'">Novidades</button>
     </section>
 
-    <section id="product1" class="section-p1">
-      <form>
-        <i class="fas fa-search"></i>
-        <input id="search-item" placeholder="Procure um produto" onkeyup="filter()">
-      </form>
-      <div class="range_container">
-        <h4 id="Preco">Preço:</h4>
-        <div class="sliders_control">
-            <input id="fromSlider" onclick="filter()" type="range" value="3" min="0" max="299"/>
-            <input id="toSlider" onclick="filter()" type="range" value="290" min="0" max="300"/>
-        </div>
-        <div class="form_control">
-          <div class="form_control_container">
-              <div class="form_control_container__time">Min</div>
-              <input class="form_control_container__time__input" onclick="filter()" type="number" id="fromInput" value="3" min="0" max="299"/>
-          </div>
-          <div class="form_control_container">
-              <div class="form_control_container__time">Max</div>
-              <input class="form_control_container__time__input" onclick="filter()" type="number" id="toInput" value="290" min="0" max="300"/>
-          </div>
-        </div>
-      </div>
-      <h4 id="FiltroMarca">Filtrar por marcas:</h4>
-      <div class="marcas">
-          <button  onclick="filter('Vileda')" id="Vileda" value="Vileda">Vileda</button>
-          <button  onclick="filter('Comac')" id="Comac" value="Comac">Comac</button>
-          <button  onclick="filter('GlobalAqua')" id="GlobalAqua" value="GlobalAqua">GlobalAqua</button>
-          <button  onclick="filter('DEB STOKO')" id="DEB STOKO" value="DEB STOKO">DEB STOKO</button>
-          <button  onclick="filter('Egiquímica')" id="Egiquímica" value="Egiquímica">Egiquímica</button>
-          <button  onclick="filter('UriWave')" id="UriWave" value="UriWave">UriWave</button>
-          <button  onclick="filter('Amoos')" id="Amoos" value="Amoos">Amoos</button>
-          <button  onclick="filter('Bérrio')" id="Bérrio" value="Bérrio">Bérrio</button>
-          <button  onclick="filter('Cleanfix')" id="Cleanfix" value="Cleanfix">Cleanfix</button>
-      </div>
-      <div class="pro-container">
+    <section id="product2" class="section-p1">
+      <div class="pro-container" id="pro-container2">
         <div class="pro" onclick="goToProduct(12)" id="page2_1">
           <img src="images/products/page2_1.1.gif " height="60%" alt="">
           <div class="des">
@@ -89,8 +98,6 @@
             </div>
             <h4>180€</h4>
           </div>
-          <a onclick="checkFav(12)" class="fav" id="favorito"><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
         </div>
         <div class="pro" onclick="goToProduct(13)" id="page2_2">
           <img src="images/products/page2_2.1.jpg" height="60%" alt="">
@@ -105,8 +112,7 @@
             </div>
             <h4>9€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(14)" id="page2_1">
           <img src="images/products/page2_3.1.jpg" height="60%" alt="">
@@ -122,8 +128,7 @@
             </div>
             <h4>10€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(15)">
           <img src="images/products/page2_4.1.gif" height="60%" alt="">
@@ -139,8 +144,7 @@
             </div>
             <h4>10€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(16)">
           <img src="images/products/page2_5.1.gif" height="60%" alt="">
@@ -153,8 +157,7 @@
             </div>
             <h4>45€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(17)">
           <img src="images/products/page2_6.1.jpg" height="60%" alt="">
@@ -169,8 +172,7 @@
             </div>
             <h4>8€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(18)">
           <img src="images/products/page2_7.1.png" height="60%" alt="">
@@ -186,8 +188,7 @@
             </div>
             <h4>6€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(19)">
           <img src="images/products/page2_8.1_loja2.jpg" height="60%" alt="">
@@ -201,8 +202,7 @@
             </div>
             <h4>565€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(20)">
           <img src="images/products/page2_9.1.png" height="60%" alt="">
@@ -218,8 +218,7 @@
             </div>
             <h4>10€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(21)">
           <img src="images/products/page2_10.1.jpg" height="60%" alt="">
@@ -233,8 +232,7 @@
             </div>
             <h4>14€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
         <div class="pro" onclick="goToProduct(22)">
           <img src="images/products/page2_11.1.jpg" height="60%" alt="">
@@ -249,8 +247,6 @@
             </div>
             <h4>22€</h4>
           </div>
-          <a onclick="checkFav(22)" class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
         </div>
         <div class="pro" onclick="goToProduct(23)">
           <img src="images/products/page2_12.1.gif" height="60%" alt="">
@@ -266,8 +262,7 @@
             </div>
             <h4>220€</h4>
           </div>
-          <a class="fav" href=""><i class="fas fa-heart"></i></a>
-          <a class="bag" href=""><i class="fas fa-shopping-bag"></i></a>
+          
         </div>
       </div>
     </section>
@@ -308,8 +303,17 @@
         window.location.href = 'products/sproduct.html?id=' + id;
       }
     </script>
+    <script>
+      document.getElementById("search-item").focus();
+    </script>
+    <script>
+      function show(){
+        document.getElementById('sidebar2').classList.toggle('active');
+        st.toggle('active');
+      }
+    </script>
     <script src="javascript/products.js"></script>
-    <script src="javascript/app.js"></script>
+    <script src="javascript/app2.js"></script>
     <script src="javascript/Loja.js"></script>
     <script src="javascript/filters.js"></script>
     

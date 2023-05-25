@@ -197,6 +197,56 @@
     color: #007bb6;
   }
 
+  #heroL2{
+    
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-position: top 0 right 0;
+    background-size: contain;
+    background-color: #e6e8f2;
+    padding: 0 80px;
+    background-repeat: no-repeat;
+  }
+
+  #heroL2 h4 {
+    color: rgb(30, 29, 29);
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  #heroL2 h1 {
+    color: rgb(59, 160, 194);
+  }
+
+  #heroL2 h2 {
+    font-size: 22px;
+  }
+
+
+  #heroL2 button{
+    background-color: rgb(59, 160, 194);
+    color: white;
+    border: 0;
+    padding: 10px 65px 10px 65px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 700;
+    background-repeat: no-repeat;
+    cursor: pointer;
+  }
+
+  #heroL2 button:hover{
+    background-color: white;
+    border: 1px solid #007bb6;
+    transition: 0.2s;
+    color: #007bb6;
+  }
+
   #sm-banner .banner-box {
     display: flex;
     flex-direction: column;
@@ -363,6 +413,90 @@
   }
 
   #product1 .pro-containerS{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  dfvdsafgvadsfa
+  #product2{
+    text-align: center;
+  }
+
+  #product2 .pro{
+    width: 23%;
+    min-width: 250px;
+    padding: 10px 12px;
+    border: 1px solid #cce7d0;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+    margin: 15px 0;
+    position: relative;
+  }
+
+  #product2 .pro .des{
+    text-align: start;
+    padding: 10px 0;
+  }
+
+  #product2 .pro .des span{
+    color: #606063;
+    font-size: 12px;
+  }
+
+  #product2 .pro .des h5{
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 20px;
+  }
+
+  #product2 .pro .des i{
+    font-size: 18px;
+    color: rgb(243,181,25);
+  }
+
+  #product2 .pro .des h4{
+    padding-top: 7px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #088178
+  }
+
+  #product2 .pro .bag{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    line-height: 35px;
+    background-color: #e8f6ea;
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    bottom: 20px;
+    right: 10px;
+    position: absolute;
+  }
+
+  #product2 .pro:hover{
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.06);
+    transition: 0.2 ease ;
+
+  }
+
+  #product2 .pro img{
+    width: 100%;
+    border-radius: 20px;
+  }
+
+  #product2 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+  }
+
+  #product2 .pro-containerS{
     display: flex;
     justify-content: space-between;
     padding: 20px;
@@ -1249,6 +1383,31 @@
   padding-left: 10px;
 }
 
+#product2 form{
+  width: 30%;
+  border: 2px solid #07accd;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 20px;
+
+}
+
+#product2 form input{
+  border: none;
+  outline: none;  
+  box-shadow: none;
+  font-size: 16px;
+  font-weight: 600px;
+  width: 100%;
+  padding: 8px 10px;
+}
+
+#product2 form i{
+  padding-left: 10px;
+}
+
 .navbar form{
   width: 30%;
   border: 1px solid rgb(44, 42, 42);
@@ -1371,7 +1530,7 @@ input[type="range"] {
   pointer-events: none;
 }
 
-#fromSlider {
+#fromSlider, #fromSlider2 {
   height: 0;
   z-index: 1;
 }
@@ -1382,7 +1541,7 @@ input[type="range"] {
   margin-top: 20px;
 }
 
-#Preco {
+#Preco, #Preco2{
   text-align: left;
   margin-left: 30px;
   margin-bottom: 20px;
@@ -1516,6 +1675,33 @@ input[type="range"] {
   right: 730px;
 }
 
+#sidebar2{
+  position: absolute;
+  width: 700px;
+  height: 40%;
+  background: transparent;
+  right: -700px;
+  transition: .4s;
+}
+
+#sidebar2.active{
+  right: 0;
+  border: 2px solid #000000;
+  border-radius: 5px;
+}
+
+#sidebar2 ul li{
+  list-style: none !important;
+  color: #fff !important;
+  font-size: 20px !important;
+  padding: 10px 14px !important;
+}
+
+#sidebar2 .toggle-btn{
+  position: absolute;
+  top: 30px;
+  right: 730px;
+}
 .toggle-btn span{
   display: block;
   width: 45px;
@@ -1524,7 +1710,7 @@ input[type="range"] {
   margin-top: 4px;
 }
 
-#FiltrosBtn{
+#FiltrosBtn, #FiltrosBtn2{
   background-color: rgb(43, 132, 68) !important;
   height: 70px !important;
   color: rgb(255, 255, 255) !important;
