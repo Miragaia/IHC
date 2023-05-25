@@ -89,6 +89,10 @@
     margin-left: 10px;
   }
 
+  .icons .activee{
+    color: #c80e0e;
+  }
+
   .icons a.favs:hover
   {
     color: #c80e0e;

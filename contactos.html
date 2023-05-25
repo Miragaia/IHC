@@ -24,6 +24,10 @@
             <li><a class= "active" href="contactos.html">Contactos</a></li>
             <li><a href="Novidades.html">Novidades</a></li>
           </ul>
+          <form>
+            <i class="fas fa-search"></i>
+            <input id="IndexSearch-item" placeholder="Procure um produto" onclick="search()">
+          </form>
           <div class="icons" style="justify-content: flex-end">
             <a class= "user" id="userLink" href="profile.html"><i class="fas fa-user"></i></a>
             <a class= "favs" href="favoritos.html"><i class="fas fa-heart"></i></a>
@@ -100,7 +104,11 @@
           <p>© 2021 Higiliquidos. Todos os direitos reservados.</p>
         </div>
       </footer>
-
+      <script>
+        function search() {
+          window.location.href = 'Loja.html';
+        }
+      </script>
       <script src="javascript/products.js"></script>
       <script src="javascript/app.js"></script>
       <script src="javascript/Loja.js"></script>
